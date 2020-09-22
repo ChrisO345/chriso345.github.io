@@ -16,8 +16,8 @@ function heuristic(a, b) {
 }
 
 // How many columns and rows?
-var cols = 100;
-var rows = 25;
+var cols = floor(window.innerHeight/8);
+var rows = floor(window.innerHeight/8);
 
 // This will be the 2D array
 var grid = new Array(cols);
@@ -37,7 +37,7 @@ var w, h;
 var path = [];
 
 function setup() {
-  createCanvas(800, 200);
+  createCanvas(window.innerWidth, window.innerHeight);
   console.log('A*');
 
   // Grid cell size
