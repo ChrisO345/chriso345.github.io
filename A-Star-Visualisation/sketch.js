@@ -16,8 +16,8 @@ function heuristic(a, b) {
 }
 
 // How many columns and rows?
-var cols = Math.floor(window.innerHeight/8);
-var rows = Math.floor(window.innerHeight/8);
+var cols = 63;
+var rows = 63;
 
 // This will be the 2D array
 var grid = new Array(cols);
@@ -35,9 +35,12 @@ var w, h;
 
 // The road taken
 var path = [];
-
+var canvas;
 function setup() {
-  createCanvas(window.innerWidth, window.innerHeight);
+  canvas = createCanvas(504, 504);
+  canvas.position((window.innerWidth/2) - 241, (window.innerHeight/2 - 241));
+  canvas.style("border-radius", '15px');
+
   console.log('A*');
 
   // Grid cell size
