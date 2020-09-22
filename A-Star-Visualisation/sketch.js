@@ -16,8 +16,8 @@ function heuristic(a, b) {
 }
 
 // How many columns and rows?
-var cols = floor(window.innerHeight/8);
-var rows = floor(window.innerHeight/8);
+var cols = Math.floor(window.innerHeight/8);
+var rows = Math.floor(window.innerHeight/8);
 
 // This will be the 2D array
 var grid = new Array(cols);
