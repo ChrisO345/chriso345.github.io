@@ -52,3 +52,9 @@ a:hover {
     position: relative;
     background-color: white;
 }
+img {
+    margin: 5px;
+    height: 32px;
+    width: height;
+    cursor: pointer;
+}
