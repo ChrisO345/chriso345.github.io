@@ -4,7 +4,8 @@ var symbolSize = 20;
 
 function setup() {
   createCanvas(
-    1000, 1000
+    window.innerWidth,
+    window.innerHeight
   );
   background(0);
 
