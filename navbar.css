@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+.active {
+  background-color: #45AC45;
+  color: white;
+}
+
 body {
 margin:0;
 font-family: 'Press Start 2P', cursive;
@@ -20,10 +25,7 @@ font-family: 'Press Start 2P', cursive;
   font-size: 17px;
 }
 
-.active {
-  background-color: #04AA6D;
-  color: white;
-}
+
 
 .topnav .icon {
   display: none;
