@@ -13,4 +13,5 @@ function getRandomColors(item) {
     } else {
         item.style.background = "linear-gradient(90deg, rgb(255, 218, 122) 0%, rgb(255, 105, 105) 100%)"
     }
+    console.clear()
 }
