@@ -325,11 +325,11 @@ left: 9px
 }
 
 .WorkItem {
-position: relative;
-line-height: 35px;
-display: inline-block;
-cursor: pointer;
-text-decoration: none
+    position: relative;
+    line-height: 35px;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none
 }
 
 .WorkItem-content {transition: transform .6s cubic-bezier(.19,1,.22,1) .04s}
@@ -357,19 +357,19 @@ position: relative
 }
 
 .WorkItem-roll {
-position: absolute;
-top: 5%;
-height: 14px;
-width: calc(50% - 10px);
-top: 50%;
-z-index: 2;
-will-change: transform;
--webkit-backface-visibility: none;
-backface-visibility: none;
-background: rgba(255,0,0,.5);
-transform: translateY(-50%) scaleX(0);
-transform-origin: 0 0;
-transition: transform .6s cubic-bezier(.19,1,.22,1)
+    position: absolute;
+    top: 5%;
+    height: 14px;
+    width: calc(50% - 10px);
+    top: 50%;
+    z-index: 2;
+    will-change: transform;
+    -webkit-backface-visibility: none;
+    backface-visibility: none;
+    background: rgba(255,0,0,.5);
+    transform: translateY(-50%) scaleX(0);
+    transform-origin: 0 0;
+    transition: transform .6s cubic-bezier(.19,1,.22,1)
 }
 
 .WorkItem: hover .WorkItem-subtitle {
@@ -381,9 +381,9 @@ transform: translateX(50%);
 transition: transform .6s cubic-bezier(.19,1,.22,1)
 }
 
-.WorkItem: hover .WorkItem-roll {
-transform: translateY(-50%) scaleX(.99999);
-transition: transform .6s cubic-bezier(.19,1,.22,1) .04s
+.WorkItem:hover.WorkItem-roll {
+    transform: translateY(-50%) scaleX(.99999);
+    transition: transform .6s cubic-bezier(.19,1,.22,1) .04s
 }
 
 @media screen and (max-width: 1024px) {
