@@ -1,93 +1,152 @@
 <html>
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1">
+
+    <!-- metas -->
+    <title>Chris Oliver</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
     <script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.6/p5.js"></script>
     <script src='index.js'></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="test.css">
 </head>
 <body style="color: rgb(255, 255, 255); cursor: default;" onload="codeBars()">
-    <div class="gl"><canvas width="1062" height="942" style="width: 850px; height: 754px;"></canvas></div>
-    <div class="Voile" style="background: rgb(46, 47, 47); opacity: 0.3679;"></div>
-    <div class="Container" style="position: fixed;">
-        <div class="Content" style="transform: translateY(-80px);">
-            <div class="Section Home">
-                <div class="Home-content">
-                    <div class="gg">
-                        <div class="gg-symbol gg-symbol--rect gg-symbol--5 gg-symbol--gradient"></div>
-                        <div class="gg-symbol gg-symbol--rect gg-symbol--3" style="opacity: 1; transform: translate(0px, 0px);"></div>
-                        <div class="gg-symbol gg-symbol--disc" style="opacity: 1; transform: translate(0px, 0px);"></div>
-                    </div>
-                    <div class="gg">
-                        <div class="gg-symbol gg-symbol--rect gg-symbol--8 gg-symbol--gradient"></div>
-                    </div>
-                    <div class="gg">
-                        <div class="gg-symbol gg-symbol--rect gg-symbol--3 gg-symbol--gradient"></div>
-                        <div class="gg-symbol gg-symbol--square" style="opacity: 1; transform: translate(0px, 0px);"></div>
-                        <div class="gg-symbol gg-symbol--rect gg-symbol--2" style="opacity: 1; transform: translate(0px, 0px);"></div>
-                        <div class="gg-symbol gg-symbol--rect gg-symbol--5 gg-symbol--gradient"></div>
-                    </div>
-                    <div class="gg">
-                        <div class="gg-symbol gg-symbol--rect gg-symbol--5 gg-symbol--gradient"></div>
-                        <div class="gg-symbol gg-symbol--rect gg-symbol--3" style="opacity: 1; transform: translate(0px, 0px);"></div>
-                        <div class="gg-symbol gg-symbol--disc" style="opacity: 1; transform: translate(0px, 0px);"></div>
-                        <div class="gg-symbol gg-symbol--rect gg-symbol--8 gg-symbol--gradient"></div>
-                    </div>
-                    <div class="gg"></div>
-                    <div class="gg gg--indent">
-                        <div class="gg-symbol gg-symbol--rect gg-symbol--3 gg-symbol--gradient"></div>
-                        <div class="gg-symbol gg-symbol--square" style="opacity: 1; transform: translate(0px, 0px);"></div>
-                        <div class="gg-symbol gg-symbol--rect gg-symbol--2" style="opacity: 1; transform: translate(0px, 0px);"></div>
-                        <div class="gg-symbol gg-symbol--rect gg-symbol--5 gg-symbol--gradient"></div>
-                    </div>
-                    <div class="Title" style="opacity: 1; transform: translate(0px, 0px);">
-                        <h1>Chris Oliver</h1>
-                        <h2></h2>
-                    </div>
-                    <div class="gg">
-                        <div class="gg-symbol gg-symbol--rect gg-symbol--5 gg-symbol--gradient"></div>
-                        <div class="gg-symbol gg-symbol--disc" style="opacity: 1; transform: translate(0px, 0px);"></div>
-                    </div>
-                    <div class="gg">
-                        <div class="gg-symbol gg-symbol--rect gg-symbol--4 gg-symbol--gradient"></div>
-                        <div class="gg-symbol gg-symbol--rect gg-symbol--2 gg-symbol--gradient"></div>
-                        <div class="gg-symbol gg-symbol--rect gg-symbol--9 gg-symbol--gradient"></div>
-                    </div>
-                    <div class="gg"></div>
-                    <div class="gg">
-                        <div class="gg-symbol gg-symbol--rect gg-symbol--5 gg-symbol--gradient"></div>
-                        <div class="gg-symbol gg-symbol--rect gg-symbol--2 gg-symbol--gradient"></div>
-                    </div>
-                    <div class="gg">
-                        <div class="gg-symbol gg-symbol--rect gg-symbol--8 gg-symbol--gradient"></div>
-                    </div>
-                    <div class="gg  gg-last">
-                        <div class="gg-symbol gg-symbol--rect gg-symbol--2 gg-symbol--gradient"></div>
-                        <div class="gg-symbol gg-symbol--square" style="opacity: 1; transform: translate(0px, 0px);"></div>
-                        <div class="gg-symbol gg-symbol--rect gg-symbol--2" style="opacity: 1; transform: translate(0px, 0px);"></div>
-                        <div class="gg-symbol gg-symbol--rect gg-symbol--3 gg-symbol--gradient"></div>
-                    </div>
-                    <div class="Arrow" data-ref="arrow" style="transform: translate(0px, 0px); opacity: 1;"></div>
-                    <div class="Section Work" style="opacity: 1; transform: translate(0px, 0px);">
-                        <div class="Work-content">
-                            <h3><span class="gg-symbol--gradient" style="background: linear-gradient(90deg, rgb(100, 145, 214) 0%, rgb(67, 240, 199) 100%);"></span>Lab</h3>
-                            <ul class="Lab-list">
-                                <li>
-                                    <a class="WorkItem" href="/sketches/physics/" target="_blank" data-color="#924601">
-                                        <div class="WorkItem-content">
-                                            <span class="WorkItem-title">Physics Sim</span>
-                                            <span class="WorkItem-dot"></span>
-                                            <span class="WorkItem-subtitle">Stuff</span>
-                                        </div>
-                                        <div class="WorkItem-roll gg-symbol--gradient" style="background: linear-gradient(90deg, rgb(242, 159, 255) 0%, rgb(124, 153, 255) 100%);"></div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+<div class="FakeScroll"></div>
+<div class="gl"></div>
+<div class="Voile"></div>
+<div class="Menu" data-component="Menu">
+    <nav>
+<!--        <a href="/about" data-id="About" data-route="about">About</a>-->
+        <a href="/works" data-id="Work" data-route="work">Work</a>
+        <a class="selected" href="/" data-id="Home" data-route="home" alt="home" title="home"><span class="Menu-invisible">Home</span><span class="gg-symbol gg-symbol--disc"></span></a>
+    </nav>
+</div>
+<div class="Container">
+    <div class="Content">
+        <div class="Section Home" data-component="Home">
+            <div class="Home-content">
+                <div class="gg">
+                    <div class="gg-symbol gg-symbol--rect gg-symbol--5 gg-symbol--gradient"></div>
+                    <div class="gg-symbol gg-symbol--rect gg-symbol--3"></div>
+                    <div class="gg-symbol gg-symbol--disc"></div>
                 </div>
+                <div class="gg">
+                    <div class="gg-symbol gg-symbol--rect gg-symbol--8 gg-symbol--gradient"></div>
+                </div>
+                <div class="gg">
+                    <div class="gg-symbol gg-symbol--rect gg-symbol--3 gg-symbol--gradient"></div>
+                    <div class="gg-symbol gg-symbol--square"></div>
+                    <div class="gg-symbol gg-symbol--rect gg-symbol--2"></div>
+                    <div class="gg-symbol gg-symbol--rect gg-symbol--5 gg-symbol--gradient"></div>
+                </div>
+                <div class="gg">
+                    <div class="gg-symbol gg-symbol--rect gg-symbol--5 gg-symbol--gradient"></div>
+                    <div class="gg-symbol gg-symbol--rect gg-symbol--3"></div>
+                    <div class="gg-symbol gg-symbol--disc"></div>
+                    <div class="gg-symbol gg-symbol--rect gg-symbol--8 gg-symbol--gradient"></div>
+                </div>
+                <div class="gg"></div>
+                <div class="gg gg--indent">
+                    <div class="gg-symbol gg-symbol--rect gg-symbol--3 gg-symbol--gradient"></div>
+                    <div class="gg-symbol gg-symbol--square"></div>
+                    <div class="gg-symbol gg-symbol--rect gg-symbol--2"></div>
+                    <div class="gg-symbol gg-symbol--rect gg-symbol--5 gg-symbol--gradient"></div>
+                </div>
+                <div class="Title" data-component="Title">
+                    <h1>Chris Oliver</h1>
+                    <h2>Creative Developer</h2>
+                </div>
+                <div class="gg">
+                    <div class="gg-symbol gg-symbol--rect gg-symbol--5 gg-symbol--gradient"></div>
+                    <div class="gg-symbol gg-symbol--disc"></div>
+                </div>
+                <div class="gg">
+                    <div class="gg-symbol gg-symbol--rect gg-symbol--4 gg-symbol--gradient"></div>
+                    <div class="gg-symbol gg-symbol--rect gg-symbol--2 gg-symbol--gradient"></div>
+                    <div class="gg-symbol gg-symbol--rect gg-symbol--9 gg-symbol--gradient"></div>
+                </div>
+                <div class="gg"></div>
+                <div class="gg">
+                    <div class="gg-symbol gg-symbol--rect gg-symbol--5 gg-symbol--gradient"></div>
+                    <div class="gg-symbol gg-symbol--rect gg-symbol--2 gg-symbol--gradient"></div>
+                </div>
+                <div class="gg">
+                    <div class="gg-symbol gg-symbol--rect gg-symbol--8 gg-symbol--gradient"></div>
+                </div>
+                <div class="gg  gg-last">
+                    <div class="gg-symbol gg-symbol--rect gg-symbol--2 gg-symbol--gradient"></div>
+                    <div class="gg-symbol gg-symbol--square"></div>
+                    <div class="gg-symbol gg-symbol--rect gg-symbol--2"></div>
+                    <div class="gg-symbol gg-symbol--rect gg-symbol--3 gg-symbol--gradient"></div>
+                </div>
+                <div class="Arrow" data-component="Arrow" data-ref="arrow"></div>
             </div>
         </div>
+        <div class="Section Work" data-component="Work">
+            <div class="Work-content">
+                <h3><span class="gg-symbol--gradient"></span>Lab</h3>
+                <ul class="Lab-list">
+                    <li>
+                        <a class="WorkItem" data-component="WorkItem" data-src="lab.png" href="/sketches/bonfire/" target="_blank" data-color="#924601">
+                            <div class="WorkItem-content">
+                                <span class="WorkItem-title">Harmonic Motion</span>
+                                <span class="WorkItem-dot"></span>
+                                <span class="WorkItem-subtitle">Double Equilibrium</span>
+                            </div>
+                            <div class="WorkItem-roll gg-symbol--gradient"></div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="Arrow" data-component="Arrow" data-ref="arrow"></div>
+            </div>
+        </div>
+<!--        <div class="Section About" data-component="About">-->
+<!--            <div class="About-content">-->
+<!--                <h3>Sup, Me Chris.</h3>-->
+<!--                <div class="gg">-->
+<!--                    <div class="gg-symbol gg-symbol&#45;&#45;rect gg-symbol&#45;&#45;4 gg-symbol&#45;&#45;gradient"></div>-->
+<!--                    <div class="gg-symbol gg-symbol&#45;&#45;disc"></div>-->
+<!--                </div>-->
+<!--                <div class="gg">-->
+<!--                    <div class="gg-symbol gg-symbol&#45;&#45;rect gg-symbol&#45;&#45;3 gg-symbol&#45;&#45;gradient"></div>-->
+<!--                    <div class="gg-symbol gg-symbol&#45;&#45;rect gg-symbol&#45;&#45;2"></div>-->
+<!--                    <div class="gg-symbol gg-symbol&#45;&#45;rect gg-symbol&#45;&#45;6 gg-symbol&#45;&#45;gradient"></div>-->
+<!--                </div>-->
+<!--                <p>I have done some shit</p>-->
+<!--                <div class="gg">-->
+<!--                    <div class="gg-symbol gg-symbol&#45;&#45;rect gg-symbol&#45;&#45;3 gg-symbol&#45;&#45;gradient"></div>-->
+<!--                    <div class="gg-symbol gg-symbol&#45;&#45;rect gg-symbol&#45;&#45;2"></div>-->
+<!--                </div>-->
+<!--                <div class="gg">-->
+<!--                    <div class="gg-symbol gg-symbol&#45;&#45;rect gg-symbol&#45;&#45;6 gg-symbol&#45;&#45;gradient"></div>-->
+<!--                </div>-->
+<!--                <div class="gg">-->
+<!--                    <div class="gg-symbol gg-symbol&#45;&#45;square"></div>-->
+<!--                    <div class="gg-symbol gg-symbol&#45;&#45;rect gg-symbol&#45;&#45;2"></div>-->
+<!--                    <div class="gg-symbol gg-symbol&#45;&#45;rect gg-symbol&#45;&#45;3 gg-symbol&#45;&#45;gradient"></div>-->
+<!--                </div>-->
+<!--                <div class="Arrow Arrow&#45;&#45;reversed" data-component="Arrow" data-ref="arrow"></div>-->
+<!--            </div>-->
+<!--        </div>-->
     </div>
+</div>
+<div class="Footer" data-component="Footer">
+    <ul>
+        <li><a href="https://github.com/chrisoliver345" target="_blank" rel="noopener">Github</a></li>
+    </ul>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/ScrollToPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/MotionPathPlugin.min.js"></script>
+
+<!-- Scripts -->
+<script src="https://guillaumegouessan.com/build.js"></script>
 </body>
 </html>
 

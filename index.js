@@ -14,5 +14,5 @@ function getRandomColors(item) {
         item.style.background = "linear-gradient(90deg, rgb(255, 218, 122) 0%, rgb(255, 105, 105) 100%)"
     }
     item.style.opacity = "1";
-    item.style.transform = "translate(0px, 0px)";
+//    item.style.transform = "translate(0px, 0px)";
 }
