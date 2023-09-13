@@ -1,173 +1,55 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1">
 
-    <!-- metas -->
     <title>Chris Oliver</title>
-    <link rel="icon" href="https://github.com/chriso345/chriso345.github.io/blob/master/icon-logo-square-transparent.png?raw=true" type="image/icon type">
+    <link rel="icon" href="res/icon-logo-square-transparent.png?raw=true" type="image/icon type" id="icon">
 
-    <!-- Favicon -->
-    <script src='index.js'></script>
+    <script src="src/javascript/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="src/css/styles.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="test.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap" rel="stylesheet">
 </head>
-<body style="color: rgb(255, 255, 255); cursor: default;" onload="codeBars()">
-<div class="FakeScroll"></div>
-<div class="gl"></div>
-<div class="Voile"></div>
-<div class="Menu" data-component="Menu">
-    <nav>
-<!--        <a href="/about" data-id="About" data-route="about">About</a>-->
-        <a href="/works" data-id="Work" data-route="work">Lab</a>
-        <a class="selected" href="/" data-id="Home" data-route="home" alt="home" title="home"><span class="Menu-invisible">Home</span><span class="gg-symbol gg-symbol--disc"></span></a>
-    </nav>
-</div>
-<div class="Container">
-    <div class="Content">
-        <div class="Section Home" data-component="Home">
-            <div class="Home-content">
-                <div class="gg">
-                    <div class="gg-symbol gg-symbol--rect gg-symbol--5 gg-symbol--gradient"></div>
-                    <div class="gg-symbol gg-symbol--rect gg-symbol--3"></div>
-                    <div class="gg-symbol gg-symbol--disc"></div>
-                </div>
-                <div class="gg">
-                    <div class="gg-symbol gg-symbol--rect gg-symbol--8 gg-symbol--gradient"></div>
-                </div>
-                <div class="gg">
-                    <div class="gg-symbol gg-symbol--rect gg-symbol--3 gg-symbol--gradient"></div>
-                    <div class="gg-symbol gg-symbol--square"></div>
-                    <div class="gg-symbol gg-symbol--rect gg-symbol--2"></div>
-                    <div class="gg-symbol gg-symbol--rect gg-symbol--5 gg-symbol--gradient"></div>
-                </div>
-                <div class="gg">
-                    <div class="gg-symbol gg-symbol--rect gg-symbol--5 gg-symbol--gradient"></div>
-                    <div class="gg-symbol gg-symbol--rect gg-symbol--3"></div>
-                    <div class="gg-symbol gg-symbol--disc"></div>
-                    <div class="gg-symbol gg-symbol--rect gg-symbol--8 gg-symbol--gradient"></div>
-                </div>
-                <div class="gg"></div>
-                <div class="gg gg--indent">
-                    <div class="gg-symbol gg-symbol--rect gg-symbol--3 gg-symbol--gradient"></div>
-                    <div class="gg-symbol gg-symbol--rect gg-symbol--2"></div>
-                    <div class="gg-symbol gg-symbol--rect gg-symbol--5 gg-symbol--gradient"></div>
-                </div>
-                <div class="Title" data-component="Title">
-                    <h1>Chris Oliver</h1>
-                    <h2></h2>
-                </div>
-                <div class="gg">
-                    <div class="gg-symbol gg-symbol--rect gg-symbol--5 gg-symbol--gradient"></div>
-                    <div class="gg-symbol gg-symbol--disc"></div>
-                </div>
-                <div class="gg">
-                    <div class="gg-symbol gg-symbol--rect gg-symbol--4 gg-symbol--gradient"></div>
-                    <div class="gg-symbol gg-symbol--rect gg-symbol--2 gg-symbol--gradient"></div>
-                    <div class="gg-symbol gg-symbol--rect gg-symbol--9 gg-symbol--gradient"></div>
-                </div>
-                <div class="gg"></div>
-                <div class="gg">
-                    <div class="gg-symbol gg-symbol--rect gg-symbol--5 gg-symbol--gradient"></div>
-                    <div class="gg-symbol gg-symbol--rect gg-symbol--2 gg-symbol--gradient"></div>
-                </div>
-                <div class="gg">
-                    <div class="gg-symbol gg-symbol--rect gg-symbol--8 gg-symbol--gradient"></div>
-                </div>
-                <div class="gg  gg-last">
-                    <div class="gg-symbol gg-symbol--rect gg-symbol--2 gg-symbol--gradient"></div>
-                    <div class="gg-symbol gg-symbol--square"></div>
-                    <div class="gg-symbol gg-symbol--rect gg-symbol--2"></div>
-                    <div class="gg-symbol gg-symbol--rect gg-symbol--3 gg-symbol--gradient"></div>
-                </div>
-                <div class="Arrow" data-component="Arrow" data-ref="arrow"></div>
-            </div>
-        </div>
-        <div class="Section Work" data-component="Work">
-            <div class="Work-content">
-                <h3><span class="gg-symbol--gradient"></span>Lab</h3>
-                <ul class="Lab-list">
-                    <li>
-                       <a class="WorkItem" data-component="WorkItem" data-src="lab.png" href="https://github.com/ChrisO345/Teak-Language" target="_blank" data-color="#924601">
-                           <div class="WorkItem-content">
-                               <span class="WorkItem-title">Teak</span>
-                               <span class="WorkItem-dot"></span>
-                               <span class="WorkItem-subtitle">Work In Progress</span>
-                           </div>
-                           <div class="WorkItem-roll gg-symbol&#45;&#45;gradient"></div>
-                       </a>
-                    </li>
-                    <li>
-                        <a class="WorkItem" data-component="WorkItem" data-src="lab.png" href="https://pypi.org/project/furthermaths/" target="_blank" data-color="#924601">
-                            <div class="WorkItem-content">
-                                <span class="WorkItem-title">FurtherMaths Pypi Package</span>
-                                <span class="WorkItem-dot"></span>
-                                <span class="WorkItem-subtitle">Work In Progress</span>
-                            </div>
-                            <div class="WorkItem-roll gg-symbol&#45;&#45;gradient"></div>
-                        </a>
-                    </li>
-                    <!-- <li>
-                        <a class="WorkItem" data-component="WorkItem" data-src="lab.png" href="" target="_blank" data-color="#924601">
-                            <div class="WorkItem-content">
-                                <span class="WorkItem-title">Brainfrick Interpreter Pypi Package</span>
-                                <span class="WorkItem-dot"></span>
-                                <span class="WorkItem-subtitle">Work In Progress</span>
-                            </div>
-                            <div class="WorkItem-roll gg-symbol&#45;&#45;gradient"></div>
-                        </a>
-                    </li> -->
-                </ul>
-                <div class="Arrow" data-component="Arrow" data-ref="arrow"></div>
-            </div>
-        </div>
-<!--        <div class="Section About" data-component="About">-->
-<!--            <div class="About-content">-->
-<!--                <h3>Sup, Me Chris.</h3>-->
-<!--                <div class="gg">-->
-<!--                    <div class="gg-symbol gg-symbol&#45;&#45;rect gg-symbol&#45;&#45;4 gg-symbol&#45;&#45;gradient"></div>-->
-<!--                    <div class="gg-symbol gg-symbol&#45;&#45;disc"></div>-->
-<!--                </div>-->
-<!--                <div class="gg">-->
-<!--                    <div class="gg-symbol gg-symbol&#45;&#45;rect gg-symbol&#45;&#45;3 gg-symbol&#45;&#45;gradient"></div>-->
-<!--                    <div class="gg-symbol gg-symbol&#45;&#45;rect gg-symbol&#45;&#45;2"></div>-->
-<!--                    <div class="gg-symbol gg-symbol&#45;&#45;rect gg-symbol&#45;&#45;6 gg-symbol&#45;&#45;gradient"></div>-->
-<!--                </div>-->
-<!--                <p>I have done some shit</p>-->
-<!--                <div class="gg">-->
-<!--                    <div class="gg-symbol gg-symbol&#45;&#45;rect gg-symbol&#45;&#45;3 gg-symbol&#45;&#45;gradient"></div>-->
-<!--                    <div class="gg-symbol gg-symbol&#45;&#45;rect gg-symbol&#45;&#45;2"></div>-->
-<!--                </div>-->
-<!--                <div class="gg">-->
-<!--                    <div class="gg-symbol gg-symbol&#45;&#45;rect gg-symbol&#45;&#45;6 gg-symbol&#45;&#45;gradient"></div>-->
-<!--                </div>-->
-<!--                <div class="gg">-->
-<!--                    <div class="gg-symbol gg-symbol&#45;&#45;square"></div>-->
-<!--                    <div class="gg-symbol gg-symbol&#45;&#45;rect gg-symbol&#45;&#45;2"></div>-->
-<!--                    <div class="gg-symbol gg-symbol&#45;&#45;rect gg-symbol&#45;&#45;3 gg-symbol&#45;&#45;gradient"></div>-->
-<!--                </div>-->
-<!--                <div class="Arrow Arrow&#45;&#45;reversed" data-component="Arrow" data-ref="arrow"></div>-->
-<!--            </div>-->
-<!--        </div>-->
+<body style="cursor: default; overflow-y: hidden;" onload="run_on_load()">
+    <div class="Header" data-component="Header">
+        <input type="checkbox" id="theme-switch" onclick="toggle_dark_mode()">
+        <label for="theme-switch" class="switch-label"><img src="res/sun-fill.svg" alt="light mode"></label>
     </div>
-</div>
-<div class="Footer" data-component="Footer">
-    <ul>
-        <li><a href="https://github.com/chriso345" target="_blank" rel="noopener">Github</a></li>
-        <li><a href="https://twitter.com/_ChrisO345" target="_blank" rel="noopener">Twitter</a></li>
-    </ul>
-</div>
+    <div class="Menu" data-component="Menu">
+        <nav>
+<!--            <a href="/works" data-id="Work" data-route="work">Lab</a>-->
+            <a class="selected" href="/" data-id="Home" data-route="home" title="home">
+                <span class="Menu-invisible">Home</span><span class="symbol symbol--disc"></span>
+            </a>
+        </nav>
+    </div>
+    <div class="Container">
+        <div class="Content">
+            <div class="Section Home" data-component="Home">
+                <div class="Home-content">
+                    <div class="Title" data-component="Title">
+                        <h1>Chris Oliver</h1>
+                        <h2></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="Section About" data-component="About">
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/ScrollToPlugin.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/MotionPathPlugin.min.js"></script>
-
-<!-- Scripts -->
-<script src="https://guillaumegouessan.com/build.js"></script>
+            </div>
+        </div>
+    </div>
+<!--    <div class="Footer" data-component="Footer">-->
+<!--        <p>Temporary</p>-->
+<!--    </div>-->
+    <div class="Menu-Footer" data-component="Menu-Footer">
+        <ul>
+            <li><a href="https://linkedin.com/in/chriso345" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn"></a></li>
+            <li><a href="https://github.com/chriso345" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="Github" class="dark-image"></a></li>
+            <li><a href="https://twitter.com/_ChrisO345" target="_blank" rel="noopener"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" alt="Twitter"></a></li>
+        </ul>
+    </div>
 </body>
 </html>
-
-<!--TODO implement a menu - lab which contains all projects i have worked on-->
-<!--TODO implement an about me page at bottom of website-->
-<!--TODO add skills/languages known on website perhaps in 3d hover sphere thingy 3.js??-->
